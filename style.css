@@ -1,0 +1,1037 @@
+/* || ROOT || */
+
+:root {
+    
+    /* -- Cores -- */
+
+    --amarelo-avaliacao: #eeb502;
+    --azul-estatistica: #2ea1cb;
+    --branco-puro: #FFFFFF;
+    --cinza-card: #232934;
+    --cinza-escuro-selecao: #131313;
+    --cinza-fundo: #1d222b;
+    --cinza-input-fundo: #2e333d;
+    --cinza-input-letra: #5c6067;
+    --cinza-medio: #767676;
+    --laranja-estatistica: #ff6b3c;
+    --verde-estatistica: #4fbd22;
+    --vermelho-marca: #eb2d43;
+
+    /* -- Fontes -- */
+    
+    --fonte-outfit: 'Outfit', sans-serif;
+}
+
+/* || RESET || */
+
+html,
+body {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--cinza-fundo);
+}
+
+/* || PÁGINA PADRÃO || */
+
+/* || \/\/\/ CABEÇALHO \/\/\/ || */
+header {
+    background-color: var(--cinza-fundo);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.navbar,
+.navbar-brand {
+    background-color: var(--cinza-fundo) !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: var(--fonte-outfit);
+}
+
+.cabecalho--logo {
+    max-height: 45px;
+}
+
+.cabecalho--logo--dois {
+    display: none;
+}
+
+.cabecalho--links-principais {
+    margin-right: 20px;
+}
+
+.cabecalho--links-principais a {
+    color: var(--branco-puro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+    width: 120px;
+}
+
+.cabecalho--links-principais a:hover,
+.cabecalho--links-principais a:focus {
+    color: var(--vermelho-marca);
+    background-color: var(--cinza-escuro-selecao);
+}
+
+.barra--pesquisa {
+    margin-right: 15px;
+}
+
+.barra--pesquisa input {
+    background-image: url(imgs/search.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-x: 9px;
+    background-position-y: 9px;
+    background-color: var(--cinza-input-fundo);
+    border-color: var(--cinza-input-fundo);
+    border-radius: 10px;
+    color: var(--cinza-input-letra);
+    height: 35px;
+    padding-left: 30px;
+    width: 300px;
+}
+
+.barra--pesquisa input:focus {
+    background-color: var(--cinza-input-fundo);
+    border-color: var(--vermelho-marca);
+    box-shadow: none;
+    outline-color: var(--vermelho-marca);
+    outline-style: solid;
+    outline-width: medium;
+    color: var(--branco-puro);
+}
+
+
+/* || /\/\/\ CABEÇALHO /\/\/\ || */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* || \/\/\/ CORPO \/\/\/ || */
+
+#telaLancamentos, #telaDevelopers, #telaPlataformas, #telaLojas {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    font-family: var(--fonte-outfit);
+}
+
+.principal h3 {
+    color: var(--branco-puro);
+    padding-left: 10px;
+}
+
+/*~~ SEÇÃO DESTAQUES ~~*/
+
+.secao--destaques {
+    margin-top: 30px;
+}
+
+.carousel-indicators button {
+    border-radius: 50%;
+    height: 10px !important;
+    width: 10px !important;
+}
+
+.principal--carrossel--item--imagem {
+    position: relative;
+}
+
+.principal--carrossel--item--imagem img {
+    border-radius: 10px;
+    height: 70vh;
+    width: 100%;
+}
+
+.loader--index {
+    align-items: center;
+    display: flex;
+    height: 70vh;
+    width: 100%;
+}
+
+.principal--carrossel--item--imagem--legenda {
+    background-image: linear-gradient(transparent, var(--cinza-fundo));
+    bottom: 0;
+    color: var(--branco-puro);
+    padding: 40px;
+    position: absolute;
+    width: 100%;
+}
+
+.principal--carrossel--item--imagem--legenda a {
+    color: var(--branco-puro);
+    text-decoration: none;
+}
+
+.principal--carrossel--item--imagem--legenda a:hover {
+    color: var(--cinza-medio);
+}
+
+.principal--carrossel--item--imagem--legenda--metacritica {
+    background-color: var(--cinza-input-fundo);
+    border-radius: 10px;
+    color: var(--branco-puro);
+    padding: 10px 20px;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+}
+
+.principal--carrossel--item--imagem--legenda--metacritica p, .principal--carrossel--item--imagem--legenda--tag p {
+    margin-bottom: 0;
+}
+
+.principal--carrossel--item--imagem--legenda--metacritica p:first-child {
+    font-size: 45px;
+}
+
+.principal--carrossel--item--imagem--legenda--metacritica p:last-child {
+    font-size: 16px;
+}
+
+.principal--carrossel--item--imagem--legenda--tag {
+    background-color: var(--cinza-input-fundo);
+    border-radius: 10px;
+    color: var(--branco-puro);
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    position: absolute;
+    text-align: center;
+    top: 140px;
+    left: 20px;
+    width: 120px;
+}
+
+/*~~ SEÇÃO LANÇAMENTOS ~~*/
+
+.secao--lancamentos {
+    margin-top: 50px;
+}
+
+.principal--lancamentos--card {
+    padding: 10px;
+}
+
+.principal--lancamentos--item {
+    background-color: var(--cinza-card);
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.principal--lancamentos--item:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.principal--lancamentos--item--imagem img {
+    border-radius: 10px 10px 0px 0px;
+    height: 230px;
+    width: 100%;
+}
+
+.principal--lancamentos--item--descricao--titulos h5 {
+    color: var(--branco-puro);
+    margin-bottom: 0;
+}
+
+.principal--lancamentos--item--descricao--titulos p {
+    color: var(--cinza-medio);
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.principal--lancamentos--item--descricao {
+    padding: 20px;
+}
+
+.principal--lancamentos--item--descricao--textos {
+    display: flex;
+    margin: 20px 0;
+}
+
+.principal--lancamentos--item--descricao--textos p {
+    margin-bottom: 3px;
+}
+
+.principal--lancamentos--item--descricao--textos--titulos {
+    color: var(--cinza-input-letra);
+    font-weight: 500;
+}
+
+.principal--lancamentos--item--descricao--textos--complementos {
+    color: var(--branco-puro);
+    font-weight: 200;
+    margin-left: 15px;
+}
+
+.principal--lancamentos--item--descricao--estatisticas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.principal--lancamentos--item--descricao--estatisticas p {
+    margin-bottom: 0;
+}
+
+.principal--lancamentos--item--descricao--estatisticas i {
+    margin-right: 10px;
+}
+
+.principal--lancamentos--item--descricao--estatisticas--contador {
+    align-items: center;
+    background-color: var(--verde-estatistica);
+    border: none;
+    border-radius: 3rem;
+    color: var(--branco-puro);
+    display: flex;
+    padding: 5px 15px;
+}
+
+.principal--lancamentos--item--descricao--estatisticas--adicionados {
+    align-items: center;
+    background-color: var(--laranja-estatistica);
+    border: none;
+    border-radius: 3rem;
+    color: var(--branco-puro);
+    display: flex;
+    padding: 5px 15px;
+}
+
+.principal--lancamentos--item--descricao--estatisticas--detalhes button {
+    background-color: var(--vermelho-marca);
+    border: none;
+    border-radius: 3rem;
+    color: var(--branco-puro);
+    padding: 5px 15px;
+}
+
+.principal--lancamentos--item--descricao--estatisticas--detalhes button:hover {
+    background-color: #b82032;
+}
+
+.principal--lancamentos--item--avaliacao {
+    background-color: var(--amarelo-avaliacao);
+    border-radius: 10px;
+    color: var(--branco-puro);
+    font-size: 25px;
+    padding: 5px 15px;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    right: 15px;
+}
+
+.principal--lancamentos--item--avaliacao p {
+    margin-bottom: 0;
+}
+
+.principal--lancamentos--item--avaliacao p:not(:first-child) {
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+/*~~ SEÇÃO DESENVOLVEDORES ~~*/
+
+.secao--desenvolvedores {
+    margin-top: 50px;
+}
+
+.principal--developers--card {
+    padding: 10px;
+}
+
+.principal--developers--item {
+    align-items: center;
+    background-color: var(--cinza-card);
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.principal--developers--item:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.principal--developers--item--imagem {
+    padding: 20px;
+}
+
+.principal--developers--item--imagem img {
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+}
+
+.principal--developers--item--descricao--titulo {
+    color: var(--branco-puro);
+    margin-top: 20px;
+}
+
+.principal--developers--item--descricao--estatisticas i {
+    color: var(--amarelo-avaliacao);
+    margin-right: 10px;
+}
+
+.principal--developers--item--descricao--estatisticas--contador {
+    background-color: var(--cinza-fundo);
+    border-radius: 7px;
+    color: var(--branco-puro);
+    display: inline-block;
+    padding: 5px 15px 5px 10px;
+}
+
+.principal--developers--item--descricao--estatisticas--contador p {
+    margin-bottom: 0;
+}
+
+.principal--developers--item--descricao--estatisticas--jogos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.principal--developers--item--descricao--estatisticas--jogos--titulo {
+    color: var(--branco-puro);
+}
+
+.principal--developers--item--descricao--estatisticas--jogos--titulo p {
+    margin-bottom: 10px;
+}
+
+.principal--developers--item--descricao--estatisticas--jogos--principais {
+    color: var(--branco-puro);
+    font-size: 12px;
+}
+
+.principal--developers--item--descricao--estatisticas--jogos--principais p {
+    background-color: var(--cinza-input-fundo);
+    border-radius: 7px;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+/*~~ SEÇÃO PLATAFORMAS ~~*/
+
+.secao--plataformas {
+    margin-top: 50px;
+}
+
+.principal--plataformas--card {
+    padding: 10px;
+}
+
+.principal--plataformas--item {
+    border: none;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.principal--plataformas--item:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.principal--plataformas--item--imagem img {
+    border-radius: 10px;
+    height: 230px;
+    width: 100%;
+}
+
+.principal--plataformas--item--nome {
+    background-color: var(--azul-estatistica);
+    border-radius: 10px;
+    color: var(--branco-puro);
+    display: inline-block;
+    left: 10px;
+    padding: 5px 15px;
+    position: absolute;
+    top: 10px;
+}
+
+.principal--plataformas--item--nome p, .principal--plataformas--item--jogos p {
+    margin-bottom: 0;
+}
+
+.principal--plataformas--item--jogos {
+    background-color: var(--laranja-estatistica);
+    border-radius: 10px;
+    color: var(--branco-puro);
+    display: inline-block;
+    text-align: center;
+    padding: 5px 15px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.principal--plataformas--item--jogos i {
+    margin-right: 10px;
+}
+
+/*~~ SEÇÃO LANÇAMENTOS ~~*/
+
+.secao--lojas {
+    margin-top: 50px;
+}
+
+.principal--lojas--card {
+    padding: 10px;
+}
+
+.principal--lojas--item {
+    background-color: var(--cinza-card);
+    border: none;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+.principal--lojas--item:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.principal--lojas--item--imagem {
+    padding: 20px;
+}
+
+.principal--lojas--item--imagem img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.principal--lojas--item--nome {
+    color: var(--branco-puro);
+    padding-bottom: 10px;
+}
+
+.principal--lojas--item--link {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.principal--lojas--item--link a {
+    color: var(--branco-puro);
+}
+
+.principal--lojas--item--link a:hover {
+    color: var(--vermelho-marca);
+}
+
+/* || /\/\/\ CORPO /\/\/\ || */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* || \/\/\/ RODAPÉ \/\/\/ || */
+
+.rodape {
+    background-color: var(--cinza-fundo);
+    box-shadow: 0 -8px 6px -6px black;
+    color: var(--cinza-medio);
+    font-family: var(--fonte-outfit);
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.rodape p {
+    margin-bottom: 0;
+}
+
+.rodape--logo {
+    width: 100%;
+}
+
+.rodape--linha-dois {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.rodape--linha-dois-titulo {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0.25em;
+    text-transform: uppercase;
+}
+
+.rodape--coluna-sobre {
+    padding-right: 20px;
+}
+
+.rodape--coluna-contato a {
+    color: var(--cinza-medio);
+    padding-right: 10px;
+}
+
+.rodape--coluna-contato a:hover {
+    color: var(--vermelho-marca);
+}
+
+.rodape--coluna-contato--redes-sociais {
+    margin-top: 10px;
+}
+
+.rodape--linha-tres {
+    border-top: 1px solid var(--cinza-medio);
+    font-size: 12px;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.rodape--linha-tres-copyright {
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+/* || /\/\/\ RODAPÉ /\/\/\ || */
+
+
+
+/* || \/\/\/ RESPONSIVIDADE \/\/\/ || */
+
+@media only screen and (max-width: 1199px) {
+    /* ~~ CABEÇALHO ~~ */
+    header {
+        display: block;
+    }
+
+    .barra--pesquisa input {
+        margin-bottom: 20px;
+        margin-top: 15px;
+        width: 100%;
+    }
+    
+    .barra--pesquisa input:focus {
+        width: 100%;
+    }
+    
+    .cabecalho--logo--um {
+        display: none;
+    }
+    
+    .cabecalho--logo--dois {
+        display: inline-block;
+        margin: 10px 0;
+        max-height: 45px;
+    }
+
+    .cabecalho--links-principais a {
+        justify-content: start;
+    }
+
+    /* ~~ SEÇÃO DESTAQUES ~~ */
+
+    .principal--carrossel--item--imagem img {
+        height: 60vh;
+    }
+
+    .principal--carrossel--item--imagem--legenda {
+        padding-left: 15px;
+    }
+
+    .principal--carrossel--item--imagem--legenda h1 {
+        font-size: 24px;
+    }
+    
+    .principal--carrossel--item--imagem--legenda h5 {
+        font-size: 16px;
+    }
+
+    .principal--carrossel--item--imagem--legenda--metacritica {
+        display: none;
+    }
+    
+    .principal--carrossel--item--imagem--legenda--tag {
+        display: none;
+    }
+
+    /* ~~ SEÇÃO DESENVOLVEDORES ~~ */
+
+    .principal--developers--item {
+        display: block;
+        text-align: center;
+    }
+
+    .principal--developers--item--descricao--titulo {
+        margin-top: 0;
+    }
+
+    .principal--developers--item--descricao--estatisticas--jogos {
+        padding-bottom: 20px;
+    }
+
+    /* ~~ RODAPÉ ~~ */
+    .rodape--coluna-sobre {
+        display: none;
+    }
+
+    .rodape--coluna-desenvolvimento {
+        margin-bottom: 15px;
+    }
+
+    /* ~~ PÁGINA DESTAQUES ~~ */
+
+    #bannerImagem img {
+        height: 50vh;
+    }
+
+    #bannerTitulo h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    #bannerPlataformas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    #bannerAvaliacao {
+        height: 80px;
+        margin-top: 40px;
+        width: 80px;
+    }
+
+    #bannerAvaliacao p {
+        font-size: 20px;
+    }
+
+    #bannerGeneros {
+        display: none;
+    }
+
+    #infoUpdate h3 {
+        font-size: 20px;
+    }
+
+    #infoLojas {
+        flex-wrap: wrap;
+    }
+
+    #infoLojas h5 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1099px) and (orientation: landscape) {
+    #bannerAvaliacao {
+        display: none;
+    }
+}
+
+/* || /\/\/\ RESPONSIVIDADE /\/\/\ || */
+
+
+
+
+
+/* //// PÁGINA DO JOGO \\\\ */
+
+.principal--detalhes {
+    min-height: 80vh;
+}
+
+.principal--banner {
+    position: relative;
+}
+
+.principal--banner img {
+    opacity: 0.5;
+    width: 100%;
+}
+
+.principal--banner--gradient {
+    background-image: linear-gradient(transparent, var(--cinza-fundo));
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.principal--banner--titulo {
+    color: var(--branco-puro);
+    display: inline-block;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 40px;
+}
+
+.principal--banner--titulo--nome h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.principal--banner--titulo--plataformas {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.principal--banner--titulo--plataformas p {
+    padding: 0 20px;
+}
+
+.principal--banner--titulo--plataformas p:not(:last-child) {
+    border-right: 2px solid var(--branco-puro);
+}
+
+.principal--banner--titulo--avaliacao {
+    align-items: center;
+    background-color: transparent;
+    border-bottom: 5px solid white;
+    border-left: 5px solid transparent;
+    border-right: 5px solid white;
+    border-top: 5px solid white;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    left: 0;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    text-align: center;
+    width: 100px;
+}
+
+.principal--banner--titulo--avaliacao p {
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+.principal--banner--titulo--generos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.principal--banner--titulo--generos h4:not(:first-child) {
+    margin-left: 20px;
+}
+
+.principal--banner--status {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.linha--status--detalhes {
+    border-bottom: 1px solid var(--cinza-input-fundo);
+    padding-bottom: 30px;
+}
+
+.principal--banner--status--detalhes {
+    color: var(--branco-puro);
+    padding-left: 25px;
+    text-transform: uppercase;
+}
+
+.principal--banner--status--detalhes p {
+    margin-bottom: 5px;
+}
+
+.status--barra {
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.progress {
+    background-color: var(--cinza-input-fundo);
+}
+
+.linha--update {
+    border-bottom: 1px solid var(--cinza-input-fundo);
+    padding-bottom: 30px;
+}
+
+.principal--banner--update {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.principal--banner--update h3 {
+    background-color: var(--laranja-estatistica);
+    border-radius: 100px;
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.linha--lojas {
+    margin-top: 30px;
+}
+
+.principal--banner--lojas {
+    color: var(--branco-puro);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.principal--banner--lojas i {
+    margin-right: 10px;
+}
+
+.principal--banner--lojas h5 {
+    background-color: var(--cinza-input-fundo);
+    border-radius: 100px;
+    padding: 10px 20px;
+}
+
+
+
+
+
+/* //// PÁGINA DE PESQUISA \\\\ */
+
+.loader--pesquisa {
+    margin-top: 100px;
+}
+
+.principal--pesquisa {
+    min-height: 90vh;
+}
+
+.principal--pesquisa--titulo {
+    border-bottom: 1px solid var(--cinza-input-letra);
+    padding-left: 0;
+    margin-top: 30px;
+}
+
+.principal--pesquisa--titulo h4 {
+    color: var(--cinza-input-letra);
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.resultado--pesquisa--card {
+    padding: 10px;
+}
+
+.resultado--pesquisa--item {
+    background-color: var(--cinza-card);
+    border-radius: 10px;
+    margin: 30px 0 10px 0;
+    position: relative;
+}
+
+.resultado--pesquisa--item:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.resultado--pesquisa--item--imagem {
+    margin: 0;
+}
+
+.resultado--pesquisa--item--imagem img {
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    width: 100%;
+}
+
+.resultado--pesquisa--item--descricao {
+    padding: 20px;
+}
+
+.resultado--pesquisa--item--descricao h5 {
+    color: var(--branco-puro);
+    padding-left: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.resultado--pesquisa--item--descricao--infos {
+    display: flex;
+    margin-top: 20px;
+}
+
+.resultado--pesquisa--item--descricao--infos--titulos p {
+    color: var(--cinza-input-letra);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.resultado--pesquisa--item--descricao--infos--dados {
+    color: var(--branco-puro);
+    margin-left: 20px;
+}
+
+.resultado--pesquisa--item--descricao--infos--dados p {
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.resultado--pesquisa--item--descricao--estatisticas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.resultado--pesquisa--item--descricao--estatisticas p {
+    margin-bottom: 0;
+}
+
+.resultado--pesquisa--item--descricao--estatisticas--avaliacao {
+    background-color: var(--amarelo-avaliacao);
+    border-radius: 10px;
+    color: var(--cinza-fundo);
+    padding: 10px;
+}
+
+.resultado--pesquisa--item--descricao--estatisticas--avaliacao i {
+    margin-right: 10px;
+}
+
+.resultado--pesquisa--item--descricao--estatisticas--link button {
+    background-color: var(--vermelho-marca);
+    border: none;
+    border-radius: 10px;
+    color: var(--branco-puro);
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.resultado--pesquisa--item--descricao--estatisticas--link button:hover {
+    background-color: #b82032;
+}
