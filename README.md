@@ -23,7 +23,7 @@ O projeto se baseou em três funcionalidades principais:
 
 ## :open_file_folder: Acesso ao Projeto
 
-O projeto pode ser acessado pelo [link do GitHub Pages](https://pmboscatti.github.io/portal-de-games-api/) ou então pelo [link do Vercel](https://portal-de-games-api.vercel.app/index.html).
+O projeto pode ser acessado pelo link do [GitHub Pages](https://pmboscatti.github.io/portal-de-games-api/) ou então pelo link do [Vercel](https://portal-de-games-api.vercel.app/index.html).
 
 
 ## :hammer: Tecnologias do Projeto
