@@ -2,7 +2,7 @@
 
 <p align="center">
 <img src="https://img.shields.io/badge/status-concluido-green"/>
-<img src="https://img.shields.io/badge/versao-1.0.0-blue"/>
+<img src="https://img.shields.io/badge/versao-1.0.1-blue"/>
 </p>
 
 ## :pencil: Descrição do Projeto
